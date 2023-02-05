@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+*{
+  box-sizing: border-box;
+}
+body{
+  min-height: 30rem;
+  background: #37474f;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.spinner-box{
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color:green;
+
+}
+.leo{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.blue-orbit{
+  height: 165px;
+  width: 165px;
+  border:1px dotted  #91ffbfa5;
+  -webkit-animation: spin3D 3s linear 0s infinite;
+  animation: spin3D 3s linear 0s infinite;
+}
+.green-orbit{
+  height: 120px;
+  width: 120px;
+  border:1px dotted  #ffca91a5;
+  -webkit-animation: spin3D 2s linear 0s infinite;
+  animation: spin3D 2s linear 0s infinite;
+}
+.red-orbit{
+  height: 90px;
+  width: 90px;
+  border:1px dotted  #ffca91a5;
+  -webkit-animation: spin3D 2s linear 0s infinite;
+  animation: spin3D 2s linear 0s infinite;
+}
+.white-orbit{
+  height: 60px;
+  width: 60px;
+  border:1px solid  #ffffff;
+  -webkit-animation: spin3D 5s linear 0s infinite;
+  animation: spin3D 5s linear 0s infinite;
+}
+.w1{
+  transform: rotate3d(1,1,1,90deg);
+}
+.w2{
+  transform: rotate3d(1,2,.5,90deg);
+}
+.w3{
+  transform: rotate3d(.5,1,2,90deg);
+}
+@keyframes spin3D{
+  from{
+    transform: rotate3d(.5,.5,.5,360deg)
+  }
+  to{
+    transform: rotate3d(0deg)
+  }
+}
+.leo-border-1{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgb(63,249,220);
+  background:linear-gradient(0deg,rgba(63,249,220,.1) 33%, rgba(63,249,220,1) 100%);
+  -webkit-animation: spin3D 1.8s linear 0s infinite;
+  animation: spin3D 1.8s linear 0s infinite;
+}
+.leo-core-1{
+  height: 100%;
+  width: 100%;
+  background-color: #37474faa;
+  radius:50%;
+}
+.leo-border-2{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgb(63,249,220);
+  background:linear-gradient(0deg,rgba(25,171,145,.1) 33%, rgba(25,171,145,1) 100%);
+  -webkit-animation: spin3D 2.2s linear 0s infinite;
+  animation: spin3D 2.2s linear 0s infinite;
+}
+.leo-core-2{
+  height: 100%;
+  width: 100%;
+  background-color: #ffab91aa;
+  border-radius:50%;
+}
